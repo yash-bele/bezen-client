@@ -19,7 +19,7 @@ const Main = ({ cards, showTag, setShowEdit }) => {
             key={id}
             className='border border-slate-300 rounded-lg py-1 px-2 h-44 relative'
           >
-            <h1 className='text-sm font-semibold mb-1'>{title}</h1>
+            <h1 className='text-sm font-semibold mb-1.5'>{title}</h1>
             <p className='text-xs'>
               {note.length > 150 ? `${note.substring(0, 165)}...` : note}
             </p>

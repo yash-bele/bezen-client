@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import axios from 'axios';
 import { nanoid } from 'nanoid';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 import { AiOutlinePushpin, AiFillPushpin } from 'react-icons/ai';
 import { MdOutlineNewLabel, MdAddTask, MdOutlineClose } from 'react-icons/md';
 import { FiTrash } from 'react-icons/fi';
@@ -48,6 +50,8 @@ const Add = ({
 
   const postData = async (e) => {
     e.preventDefault();
+    if (!text.title) return toast.error('Empty title', { pauseOnHover: false });
+    if (!text.note) return toast.error('Empty note', { pauseOnHover: false });
     setText({ title: '', note: '' });
     setPin(false);
     setCardTags([]);
@@ -63,6 +67,8 @@ const Add = ({
 
   const patchData = async (e) => {
     e.preventDefault();
+    if (!text.title) return toast.error('Empty title', { pauseOnHover: false });
+    if (!text.note) return toast.error('Empty note', { pauseOnHover: false });
     setShowEdit({});
     const card = cards.find((i) => i.id === showEdit.id);
     const cardsx = [
@@ -206,6 +212,7 @@ const Add = ({
           </section>
         </main>
       )}
+      <ToastContainer position='top-center' theme='colored' autoClose={3000} />
     </>
   );
 };

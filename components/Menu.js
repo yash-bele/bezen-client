@@ -26,7 +26,8 @@ const Menu = ({ setShowMenu, setShowTag, data, setData, tags, setTags }) => {
       .filter((i) => i !== '')
       .join(' ');
     if (!trimTag) return toast.error('Enter tag');
-    if (tags.includes(trimTag)) return toast.error('Tag already exists');
+    if (tags.includes(trimTag))
+      return toast.error('Tag already exists', { pauseOnHover: false });
     setTag('');
     const tagsx = [...tags, trimTag];
     setTags(tagsx);
@@ -37,7 +38,7 @@ const Menu = ({ setShowMenu, setShowTag, data, setData, tags, setTags }) => {
 
   return (
     <main className='h-full'>
-      <section className='w-fit h-12 px-4 rounded-lg shadow-md flex items-center justify-between'>
+      <section className='w-fit h-12 px-4 rounded-lg shadow flex items-center justify-between border'>
         <AiOutlineMenu
           onClick={() => setShowMenu(false)}
           className='text-slate-500 text-xl cursor-pointer'
@@ -94,7 +95,7 @@ const Menu = ({ setShowMenu, setShowTag, data, setData, tags, setTags }) => {
           <p>Dark Mode</p>
         </div> */}
       </section>
-      <ToastContainer position='top-center' theme='colored' />
+      <ToastContainer position='top-center' theme='colored' autoClose={3000} />
     </main>
   );
 };

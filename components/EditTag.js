@@ -59,7 +59,7 @@ const EditTag = ({
       .split(' ')
       .filter((i) => i !== '')
       .join(' ');
-    if (!trimEdit) return toast.error('Enter tag');
+    if (!trimEdit) return toast.error('Enter tag', { pauseOnHover: false });
     setShowEditTag({ edit: '', del: '' });
     setShowTag(trimEdit);
     const tagsx = tags.map((i) => (i === showEditTag.edit ? trimEdit : i));
@@ -158,7 +158,7 @@ const EditTag = ({
           </section>
         </main>
       )}
-      <ToastContainer position='top-center' theme='colored' />
+      <ToastContainer position='top-center' theme='colored' autoClose={3000} />
     </>
   );
 };

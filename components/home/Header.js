@@ -6,7 +6,7 @@ const Header = ({ setShowMenu, showTag, setShowAdd, setShowEditTag }) => {
   return (
     <>
       {!showTag && (
-        <header className='h-12 px-4 rounded-lg shadow-md flex items-center justify-between'>
+        <header className='h-12 px-4 rounded-lg shadow flex items-center justify-between border'>
           <section className='flex items-center justify-between w-full'>
             <AiOutlineMenu
               onClick={() => setShowMenu(true)}
@@ -21,7 +21,7 @@ const Header = ({ setShowMenu, showTag, setShowAdd, setShowEditTag }) => {
         </header>
       )}
       {showTag && (
-        <header className='h-12 px-4 rounded-lg shadow-md flex items-center justify-between'>
+        <header className='h-12 px-4 rounded-lg shadow flex items-center justify-between border'>
           <section className='flex items-center justify-between w-full'>
             <AiOutlineMenu
               onClick={() => setShowMenu(true)}

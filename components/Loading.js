@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { AiOutlineMenu, AiOutlineAppstoreAdd } from 'react-icons/ai';
-import { ImSpinner9 } from 'react-icons/im';
+import { CgSpinner } from 'react-icons/cg';
 
 const Loading = () => {
   return (
@@ -21,7 +21,7 @@ const Loading = () => {
           </header>
         </section>
         <section className='mt-36'>
-          <ImSpinner9 className='text-9xl text-slate-200 animate-spin' />
+          <CgSpinner className='text-9xl text-slate-200 animate-spin' />
         </section>
       </main>
     </>

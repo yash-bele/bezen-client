@@ -90,7 +90,7 @@ const EditTag = ({
             </div>
             <div>
               <p className='text-sm'>
-                We'll delete this tag and remove it from all of your notes. Your
+                We’ll delete this tag and remove it from all of your notes. Your
                 notes wont be deleted.
               </p>
             </div>

@@ -86,7 +86,7 @@ const Add = ({
       {(showAdd || showEdit.id) && (
         <main className='h-full w-80 flex justify-center absolute top-0'>
           <section
-            className={`bg-white rounded-lg w-full h-[168px] mt-32 shadow-lg relative ${
+            className={`bg-white rounded-lg w-full h-[168px] mt-40 shadow-lg relative ${
               !addCardTag ? 'block' : 'hidden'
             }`}
           >

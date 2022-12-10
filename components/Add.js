@@ -152,7 +152,7 @@ const Add = ({
                 return (
                   <div
                     key={i}
-                    className='pt-0.5 pb-1 px-2 rounded-lg bg-slate-200 cursor-pointer mr-2'
+                    className='py-0.5 px-2 rounded-lg bg-slate-300 cursor-pointer mr-2'
                   >
                     <p className='text-xs'>{i}</p>
                   </div>

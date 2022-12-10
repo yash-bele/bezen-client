@@ -12,7 +12,7 @@ const Loading = () => {
       </Head>
       <main className='absolute w-full h-full flex flex-col items-center'>
         <section className='w-80'>
-          <header className='h-12 px-4 rounded-lg shadow-md flex items-center justify-between'>
+          <header className='h-12 px-4 rounded-lg shadow flex items-center justify-between border'>
             <section className='flex items-center justify-between w-full'>
               <AiOutlineMenu className='text-slate-500 text-xl cursor-pointer' />
               <h1 className='font-semibold'>BeZen</h1>

@@ -130,8 +130,8 @@ const EditTag = ({
         </main>
       )}
       {showEditTag.edit && (
-        <main className='h-full w-80 flex justify-center items-center absolute top-0'>
-          <section className='bg-white rounded-lg w-full h-[168px] -mt-20 shadow-lg px-3 flex flex-col justify-around'>
+        <main className='h-full w-80 flex justify-center absolute top-0'>
+          <section className='bg-white rounded-lg w-full h-[168px] mt-52 shadow-lg px-3 flex flex-col justify-around'>
             <div className='flex items-center justify-between'>
               <h1 className='font-semibold'>Rename Tag</h1>
               <MdOutlineClose

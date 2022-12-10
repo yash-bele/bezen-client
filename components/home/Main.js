@@ -20,8 +20,8 @@ const Main = ({ cards, showTag, setShowEdit }) => {
             className='border border-slate-300 rounded-lg py-1 px-2 h-44 relative'
           >
             <h1 className='text-sm font-semibold mb-2'>{title}</h1>
-            <p className='text-xs'>
-              {note.length > 150 ? `${note.substring(0, 165)}...` : note}
+            <p className='text-xs break-all'>
+              {note.length > 150 ? `${note.substring(0, 190)}...` : note}
             </p>
             {pin && <AiFillPushpin className='absolute top-1 right-1' />}
           </section>

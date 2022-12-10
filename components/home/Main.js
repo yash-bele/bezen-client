@@ -21,7 +21,7 @@ const Main = ({ cards, showTag, setShowEdit }) => {
           >
             <h1 className='text-sm font-semibold mb-2'>{title}</h1>
             <p className='text-xs break-all'>
-              {note.length > 150 ? `${note.substring(0, 190)}...` : note}
+              {note.length > 190 ? `${note.substring(0, 190)}...` : note}
             </p>
             {pin && <AiFillPushpin className='absolute top-1 right-1' />}
           </section>

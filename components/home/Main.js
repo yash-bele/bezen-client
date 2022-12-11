@@ -17,7 +17,7 @@ const Main = ({ cards, showTag, setShowEdit }) => {
           <section
             onClick={() => setShowEdit(i)}
             key={id}
-            className='border border-slate-300 shadow rounded-lg py-1 px-2 h-[170px] relative'
+            className='border border-slate-300 rounded-lg py-1 px-2 h-[170px] relative'
           >
             <h1 className='text-sm font-semibold mb-2'>
               {title.length > 15 ? `${title.substring(0, 15)}...` : title}

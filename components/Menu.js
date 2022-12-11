@@ -44,7 +44,7 @@ const Menu = ({ setShowMenu, setShowTag, data, setData, tags, setTags }) => {
           className='text-slate-500 text-xl cursor-pointer'
         />
       </section>
-      <section className='mt-10 h-[80%] border border-slate-300 rounded-lg overflow-y-scroll scrollbar-thin hover:scrollbar-thumb-slate-300 scrollbar-thumb-rounded-full cursor-default'>
+      <section className='mt-10 h-[80%] border border-slate-300 shadow rounded-lg overflow-y-scroll scrollbar-thin hover:scrollbar-thumb-slate-300 scrollbar-thumb-rounded-full cursor-default'>
         <div
           onClick={() => {
             setShowMenu(false);

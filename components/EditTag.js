@@ -79,8 +79,8 @@ const EditTag = ({
   return (
     <>
       {showEditTag.del && (
-        <main className='h-full w-80 flex justify-center items-center absolute top-0'>
-          <section className='bg-white rounded-lg w-full h-[168px] -mt-20 shadow-lg px-3 py-1 flex flex-col justify-around'>
+        <main className='h-full w-80 flex justify-center absolute top-0'>
+          <section className='bg-white rounded-lg w-full h-[168px] mt-52 shadow-lg px-3 py-1 flex flex-col justify-around'>
             <div className='flex items-center justify-between'>
               <h1 className='font-semibold'>Delete Tag</h1>
               <MdOutlineClose
@@ -105,8 +105,8 @@ const EditTag = ({
         </main>
       )}
       {showDelCard && (
-        <main className='h-full w-80 flex justify-center items-center absolute top-0'>
-          <section className='bg-white rounded-lg w-full h-[168px] -mt-20 shadow-lg px-3 flex flex-col justify-around'>
+        <main className='h-full w-80 flex justify-center absolute top-0'>
+          <section className='bg-white rounded-lg w-full h-[168px] mt-52 shadow-lg px-3 flex flex-col justify-around'>
             <div className='flex items-center justify-between -mt-0.5'>
               <h1 className='font-semibold'>Delete Note</h1>
               <MdOutlineClose
